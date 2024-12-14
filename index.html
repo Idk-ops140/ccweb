@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>🎄 Christmas Counter 🎄</h1>
+        <p>Select your location:</p>
+        <div id="location-selector">
+            <label for="region">Region:</label>
+            <select id="region">
+                <option value="global">Global</option>
+                <option value="us">United States</option>
+            </select>
+            <div id="state-selector" style="display: none;">
+                <label for="state">State:</label>
+                <select id="state">
+                    <option value="Eastern Time">Eastern Time</option>
+                    <option value="Central Time">Central Time</option>
+                    <option value="Mountain Time">Mountain Time</option>
+                    <option value="Pacific Time">Pacific Time</option>
+                </select>
+            </div>
+        </div>
+        <p id="countdown">Loading...</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
